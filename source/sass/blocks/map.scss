@@ -1,0 +1,13 @@
+.map {
+  background-color: #000000;
+
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__map {
+    width: 100%;
+    height: 1202px;
+  }
+}

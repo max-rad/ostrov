@@ -66,6 +66,7 @@
     "imagemin-mozjpeg": "^10.0.0",
     "imagemin-pngquant": "^9.0.2",
     "imagemin-svgo": "^10.0.1",
+    "ol": "^9.0.0",
     "sass": "^1.62.1",
     "stylelint": "^15.11.0",
     "stylelint-config-htmlacademy": "^2.0.6",
