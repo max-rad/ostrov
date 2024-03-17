@@ -3,32 +3,60 @@
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
-  padding: 14px 9px;
+  padding: 16px 20px;
 
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 16px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
   text-transform: uppercase;
 
-  border: 1px solid $color-default-white;
-  border-radius: 4px;
-  background-color: $color-summer-sky-2;
+  border: none;
+  border-radius: 8px;
+  background-color: $color-fountain-blue;
   color: $color-default-white;
 
   cursor: pointer;
   user-select: none;
 
-  transition: opacity $trans-default;
+  transition: background-color $trans-default, color $trans-default;
 
   outline: none;
 
-  &--white {
-    border: 1px solid $color-dolphin;
-    background-color: $color-default-white;
-    color: $color-black-russian-2;
+  @include vp-995 {
+    padding: 12px 20px;
+
+    font-size: 14px;
+    line-height: 17px;
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    background-color: $color-gulf-stream;
+    //background: linear-gradient(91.71deg, $color-gulf-stream 0.88%, $color-fountain-blue-2 50.56%, $color-gulf-stream 99.46%);
+  }
+
+  @include active {
+    background-color: $color-gulf-stream;
+  }
+
+  &--white {
+    padding: 12px 16px;
+
+    border: 2px solid $color-fountain-blue;
+    background-color: $color-default-white;
+    color: $color-fountain-blue;
+
+    @include vp-995 {
+      padding: 8px 16px;
+    }
+
+    @include hover-focus {
+      background-color: $color-fountain-blue;
+      color: $color-default-white;
+    }
+
+    @include active {
+      background-color: $color-fountain-blue;
+      color: $color-default-white;
+    }
   }
 }

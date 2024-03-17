@@ -10,6 +10,12 @@ $color-transparent:             rgba(255, 255, 255, 0);
 // Project palette
 // для нейминга цветов используем https://www.htmlcsscolor.com/hex/334482
 
+$color-haiti:                   #161419;
+$color-spun-pearl:              #a19fa5;
+$color-fountain-blue:           #64afbd;
+$color-fountain-blue-2:         #65b0bb;
+$color-gulf-stream:             #71bba2;
+
 $color-black-russian:           #10101d;
 $color-black-russian-2:         #2a2b30;
 $color-jaguar:                  #272733;
@@ -29,7 +35,7 @@ $black-to-right: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0)
 // переменная используемая в html для подключения скейлинга
 $fz-default: 20px;
 
-$ff-lato: "Lato", "Arial", sans-serif;
+$ff-tt-norms-pro: "TT Norms Pro", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
@@ -57,6 +63,7 @@ $trans-400-ease-in-out:             0.4s $tf-ease-in-out;
 $vp-320:                            320px;
 $vp-375:                            375px;
 $vp-768:                            768px;
+$vp-996:                            996px;
 $vp-1024:                           1024px;
 $vp-1280:                           1280px;
 $vp-1440:                           1440px;

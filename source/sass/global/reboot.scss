@@ -16,7 +16,7 @@ html {
   font-weight: 400;
   font-size: $fz-default;
   line-height: 24px;
-  font-family: $ff-lato;
+  font-family: $ff-tt-norms-pro;
   color: $color-default-black;
 
   -webkit-font-smoothing: antialiased;
@@ -29,7 +29,7 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: $color-default-white;
+  background-color: $color-default-black;
 }
 
 a {

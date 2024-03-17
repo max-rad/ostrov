@@ -1,0 +1,154 @@
+.feedback {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 580px;
+
+    @include vp-1279 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__title {
+    margin: 0 0 20px;
+
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+
+    color: $color-haiti;
+
+    @include vp-1279 {
+      display: none;
+      margin: 0 0 30px;
+    }
+
+    @include vp-995 {
+      margin: 0 0 20px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 24px;
+    }
+
+    &--tablet {
+      display: none;
+
+      @include vp-1279 {
+        display: block;
+      }
+    }
+  }
+
+  &__restoplace {
+    border-radius: 16px 0 0 16px;
+    background-color: $color-gulf-stream;
+
+    @include vp-1279 {
+      height: 534px;
+      margin: 0 0 20px;
+
+      border-radius: 16px;
+    }
+  }
+
+  &__form {
+    padding: 86px 50px 86px 38px;
+
+    @include vp-1279 {
+      padding: 0;
+    }
+  }
+
+  &__description {
+    margin: 0 0 20px;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: $color-haiti;
+
+    @include vp-767 {
+      margin: 0 0 16px;
+    }
+
+    span {
+      font-weight: 500;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 20px;
+
+    @include vp-1279 {
+      flex-direction: row;
+    }
+
+    @include vp-767 {
+      flex-direction: column;
+      margin: 0 0 16px;
+    }
+  }
+
+  &__input {
+    width: 100%;
+    margin: 0 0 12px;
+
+    @include vp-1279 {
+      margin: 0 20px 0 0;
+    }
+
+    @include vp-767 {
+      margin: 0 0 16px;
+    }
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  &__agreement {
+    margin: 0 0 20px;
+  }
+
+  &__buttons {
+    display: flex;
+    column-gap: 20px;
+
+    @include vp-767 {
+      flex-direction: column;
+    }
+  }
+
+
+  &__button-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    @include vp-767 {
+      margin: 0 0 20px;
+    }
+
+    &:last-child {
+      @include vp-767 {
+        margin: 0;
+      }
+    }
+  }
+
+  &__text {
+    margin: 8px 0 0;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+
+    color: $color-spun-pearl;
+  }
+}

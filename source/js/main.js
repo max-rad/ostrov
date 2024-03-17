@@ -5,6 +5,7 @@ import {initModals} from './modules/modal/init-modals';
 import {initPhoneMask} from './modules/init-phone-mask';
 import {initPhoneValidation} from './modules/init-phone-validation';
 import {initMap} from './modules/init-map';
+import {initPopupSlider} from './modules/init-popup-slider';
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -16,5 +17,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initPhoneMask();
     initPhoneValidation();
     initMap();
+    initPopupSlider();
   });
 });

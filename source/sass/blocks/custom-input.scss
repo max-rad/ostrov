@@ -19,24 +19,30 @@
 
   input {
     width: 100%;
-    padding: 16px 20px 15px;
+    padding: 15px;
 
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
+    line-height: 19px;
 
-    border: none;
-    border-radius: 12px;
-    color: $color-default-black;
+    border: 1px solid $color-spun-pearl;
+    border-radius: 8px;
+    color: $color-haiti;
 
     outline: none;
+
+    transition: border $trans-default;
 
     &::placeholder {
       font-weight: 400;
       font-size: 16px;
-      line-height: 24px;
+      line-height: 19px;
 
-      color: rgba($color-default-black, 0.5)
+      color: $color-haiti;
+    }
+
+    @include hover-focus {
+      border: 1px solid $color-fountain-blue;
     }
   }
 }

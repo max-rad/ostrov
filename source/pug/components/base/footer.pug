@@ -1,3 +1,24 @@
 mixin footer(footerMods)
+  -
+    const footerLinks = [
+      {
+        href: "#",
+        text: "Афиша"
+      },
+      {
+        href: "#",
+        text: "Политика конфиденциальности"
+      }
+    ]
+
   footer.footer(class=footerMods)
     .container
+      .footer__wrapper
+        a.footer__logo(href="index.html", aria-label="Переход на главную")
+          img(src="img/content/logo.webp" width="193" height="44" alt="Логотип Остров")
+        ul.footer__list
+          each item in footerLinks
+            li.footer__item
+              a.footer__link(href=item.href)!=item.text
+        a.footer__phone(href="tel:88004444541") 8 800 444 45 41
+
