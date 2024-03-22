@@ -1,19 +1,21 @@
 const initPopupSlider = () => {
-  const slider = document.querySelector('[data-slider="popup"]');
+  const sliders = document.querySelectorAll('[data-slider="popup"]');
 
-  if (!slider) {
+  if (!sliders.length) {
     return;
   }
 
-  const prev = slider.querySelector('[data-button-prev]');
-  const next = slider.querySelector('[data-button-next]');
+  sliders.forEach((slider) => {
+    const prev = slider.querySelector('[data-button-prev]');
+    const next = slider.querySelector('[data-button-next]');
 
-  const swiper = new Swiper(slider, {
-    slidesPerView: 'auto',
-    navigation: {
-      prevEl: prev,
-      nextEl: next,
-    },
+    const swiper = new Swiper(slider, {
+      slidesPerView: 'auto',
+      navigation: {
+        prevEl: prev,
+        nextEl: next,
+      },
+    });
   });
 };
 

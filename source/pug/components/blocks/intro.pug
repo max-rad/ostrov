@@ -5,4 +5,15 @@ mixin intro()
         h1.intro__title Забронируйте отдых
         .intro__content
           .intro__map(id="map")
-          +popup().intro__popup
+          span.intro__point(data-point="1" data-floor-id="16474") 1
+          +popup().intro__popup(data-popup="1")
+          span.intro__point(data-point="2" data-floor-id="21390") 2
+          +popup().intro__popup(data-popup="2")
+          span.intro__point(data-point="3" data-floor-id="21171") 3
+          +popup().intro__popup(data-popup="3")
+          span.intro__point(data-point="4" data-floor-id="21389") 4
+          +popup().intro__popup(data-popup="4")
+          span.intro__point(data-point="5" data-floor-id="21392") 5
+          +popup().intro__popup(data-popup="5")
+          span.intro__point(data-point="6" data-floor-id="21391") 6
+          +popup().intro__popup(data-popup="6")

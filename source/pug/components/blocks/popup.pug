@@ -1,6 +1,7 @@
 mixin popup()
   .popup&attributes(attributes)
-    +icon("icon-triangle", 42, 24).popup__triangle
+    span.popup__triangle(data-triangle)
+      +icon("icon-triangle", 42, 24)
     button.btn-reset.popup__close-button(type="button" arial-label="Закрыть попап" data-close-popup)
       +icon("icon-close", 34, 34)
     .popup__wrapper

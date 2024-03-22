@@ -39,14 +39,14 @@
   }
 
   &--white {
-    padding: 12px 16px;
+    padding: 14px 18px;
 
     border: 2px solid $color-fountain-blue;
     background-color: $color-default-white;
     color: $color-fountain-blue;
 
     @include vp-995 {
-      padding: 8px 16px;
+      padding: 10px 18px;
     }
 
     @include hover-focus {
